@@ -1,0 +1,98 @@
+/* GLOBAL RESET */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F8FAFB; /* Light background for content */
+}
+
+/* MAIN LAYOUT */
+.d-flex {
+  height: calc(100% - 60px); /* Account for navbar height */
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  background-color: #08475A; /* Dark teal */
+  color: white;
+  min-height: 100%;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #0B5C73; /* Slightly lighter teal on hover */
+}
+
+.sidebar a.active {
+  background-color: #FF8C42; /* Accent color for active link */
+  color: white;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #08475A; /* Match sidebar */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Ensure all text/icons in navbar are white */
+.navbar-custom * {
+  color: white !important;
+}
+
+/* SEARCH BAR */
+.search-bar input {
+  border-radius: 20px;
+  padding: 5px 15px;
+  height: 35px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ICON BUTTONS */
+.icon-button {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+/* BADGES */
+.badge-custom {
+  background-color: #FF8C42; /* Accent color */
+  color: white;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
